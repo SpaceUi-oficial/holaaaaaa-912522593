@@ -1,0 +1,236 @@
+/* Estilos generales del cuerpo */
+body {
+    padding: 40px;
+    background-color: #121212; /* Color de fondo oscuro */
+    min-height: 100vh; /* Altura mínima de 100vh */
+    color: #ffffff; /* Color de texto blanco */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrar el contenedor */
+    padding: 20px;
+    background-color: #1d1d1d; /* Fondo de la sección del formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+}
+
+/* Estilo del título principal */
+.main-title {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 2.5rem; /* Tamaño del título */
+}
+.card-description{
+    text-align: center;
+}
+/* Estilo de las filas */
+.row {
+    display: flex; /* Usar flexbox para las filas */
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo de las tarjetas */
+.card {
+    background-color: #2a2a2a; /* Fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    width: 30%; /* Ancho de las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    margin: 10px; /* Margen entre tarjetas */
+}
+
+/* Efecto hover para las tarjetas */
+.card:hover {
+    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.7); /* Sombra naranja al pasar el mouse */
+    transform: translateY(-5px); /* Elevación al hacer hover */
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block; /* Bloque para ocupar toda la línea */
+    margin-bottom: 5px; /* Margen inferior */
+    color: #fff; /* Color del texto de las etiquetas */
+}
+
+/* Estilo de los inputs */
+.customInput {
+    width: 95%; /* Ancho del 95% para que quepa bien en las tarjetas */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #444; /* Borde gris oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #1d1d1d; /* Fondo oscuro para los inputs */
+    color: white; /* Color del texto en los inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transición al enfocar */
+    margin-bottom: 10px; /* Margen inferior para separación */
+}
+
+/* Efecto al enfocar en los inputs */
+.customInput:focus {
+    border-color: #ff8f00; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.5); /* Sombra suave al enfocar */
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+    color: red; /* Color rojo para errores */
+    font-size: 12px; /* Tamaño del texto de errores */
+    margin-top: 5px; /* Margen superior */
+}
+
+/* Estilo para los requisitos de contraseña */
+.password-requirements {
+    font-size: 14px; /* Tamaño del texto */
+    color: gray; /* Color gris para los requisitos */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para las opciones de género */
+.gender-options {
+    display: flex; /* Usar flexbox para los géneros */
+    margin-top: 10px; /* Margen superior */
+}
+
+.gender-options input[type="radio"] {
+    display: none; /* Ocultar los botones de radio */
+}
+
+.gender-options label {
+    background-color: #2a2a2a; /* Fondo de las etiquetas */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-right: 10px; /* Espacio a la derecha */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    cursor: pointer; /* Cambia el cursor al pasar */
+}
+
+/* Estilo para el hover y el estado seleccionado de las opciones de género */
+.gender-options input[type="radio"]:checked + label,
+.gender-options label:hover {
+    background-color: #ff8f00; /* Fondo naranja al hover y seleccionado */
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5); /* Sombra naranja al hover */
+}
+
+/* Estilo para el checkbox de términos y condiciones */
+input[type="checkbox"] {
+    margin-right: 5px; /* Espacio a la derecha */
+}
+
+label[for="terms"] {
+    display: inline-block; /* Mostrar en línea */
+    margin-top: 10px; /* Margen superior */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilo para los botones de envío */
+.submit-button {
+    width: 100%; /* Ancho completo */
+    padding: 15px; /* Espaciado interno */
+    background-color: #ff8f00; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.submit-button:hover {
+    background-color: #ffa000; /* Color más claro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+}
+
+
+/* Estilo para el checkbox de términos y condiciones */
+input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox original */
+}
+
+/* Estilo para la etiqueta del checkbox */
+.checkbox-label {
+    display: inline-flex; /* Usar flexbox para alinear */
+    align-items: center; /* Centrar verticalmente */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    color: #fff; /* Color del texto */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilo del cuadro del checkbox */
+.checkbox-box {
+    width: 20px; /* Ancho del cuadro */
+    height: 20px; /* Altura del cuadro */
+    border: 2px solid #444; /* Borde gris oscuro */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-right: 5px; /* Espacio a la derecha */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    display: flex; /* Usar flexbox para centrar el icono */
+    justify-content: center; /* Centrar el icono */
+    align-items: center; /* Centrar verticalmente */
+}
+
+
+
+/* Estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked + .checkbox-box {
+    background-color: #ff8f00; /* Fondo naranja cuando está activo */
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5); /* Sombra naranja cuando está activo */
+}
+
+/* Estilo para el texto del checkbox */
+.checkbox-label span {
+    color: #fff; /* Color del texto */
+}
+  /* Social section styles */
+  .social-section {
+    text-align: center;
+    margin-top: 50px; /* Ajusta el margen superior */
+    color: white; /* Color del texto */
+  }
+  
+  .blueprint-title {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+  }
+  
+  .social-text {
+    font-size: 24px; /* Tamaño de fuente más grande */
+    margin-bottom: 20px; /* Espaciado debajo del texto */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre iconos */
+  }
+  
+  .icon {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: 40px; /* Ajusta el tamaño del icono */
+    fill: white; /* Color del icono */
+    transition: fill 0.3s ease; /* Transición suave para hover */
+  }
+  
+  .social-icons a:hover .icon {
+    fill: #ff8f00; /* Color al pasar el mouse (naranja) */
+  }
+  
+  .containerTitle {
+    grid-column: span 3; /* El título ocupa tres columnas */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-title {
+    color: #ccc;
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    margin: 0;
+    color: #a9a9a9;
+  }
+  
